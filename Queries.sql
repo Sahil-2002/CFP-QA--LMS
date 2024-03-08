@@ -81,13 +81,14 @@ select * from fellowship_candidate as f
 inner join company as c 
 on f.Id = c.Creator_User;
 
--- 22-find all condidate and mentors which is related to lab= banglore/mumbai/pune.
+-- 18-find all condidate and mentors which is related to lab= banglore/mumbai/pune.
 
 select f.First_Name as Candidate_name , m.Name as mentor_name , l.Location from  fellowship_candidate as f 
 join lab as l on f.Creator_User = l.Creator_User
 join mentor as m on f.Creator_User = m.Creator_User
 where l.Location = 'Mumbai';
 
+-- 23-find buddy mentors and ideation mentor and which technology assign to perticular candidate if candidate id is 6
 SELECT 
     f.First_name, 
     c.Ideation_Engg_Id AS Ideation_Mentor_Id, 
