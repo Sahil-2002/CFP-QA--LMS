@@ -560,4 +560,27 @@ VALUES
     (4, 4, 4, 'Active', '2024-03-08 10:45:00', 4),
     (5, 5, 5, 'Active', '2024-03-08 10:50:00', 5),
     (6, 6, 6, 'Active', '2024-03-08 10:55:00', 6);
+    
+    INSERT INTO candidate_stack_assignment (
+    Id, Requirement_Id, Candidate_Id, Assign_Date, Complete_Date, Status, Creator_Stamp, Creator_User
+) 
+VALUES 
+    (1, 1, 1, '2023-07-01', '2024-03-15', 'Assigned', '2024-03-08 11:00:00', 1),
+    (2, 2, 2, '2023-02-15', '2023-05-28', 'Completed', '2024-03-08 11:05:00', 2),
+    (3, 3, 3, '2019-02-22', '2020-01-15', 'Assigned', '2024-03-08 11:10:00', 3),
+    (4, 4, 4, '2020-02-28', '2021-01-01', 'Assigned', '2024-03-08 11:15:00', 4),
+    (5, 5, 5, '2023-09-01', '2024-02-05', 'Assigned', '2024-03-08 11:20:00', 5),
+    (6, 6, 6, '2024-03-01', '2024-05-01', 'Pending', '2024-03-08 11:25:00', 6);
+select * from candidate_stack_assignment;
+INSERT INTO mentor_tech_stack (
+    Id, Mentor_Id, Tech_Stack_Id, Status, Creator_Stamp, Creator_User
+) 
+VALUES 
+    (1, 1, 1, 'Active', now(), 1),
+    (2, 2, 2, 'Active', now(), 2),
+    (3, 3, 3, 'Active', now(), 3),
+    (4, 4, 4, 'Active', now(), 4),
+    (5, 5, 5, 'Active', now(), 5),
+    (6, 6, 6, 'Active', now(), 6);
+    
 
