@@ -88,7 +88,7 @@ join lab as l on f.Creator_User = l.Creator_User
 join mentor as m on f.Creator_User = m.Creator_User
 where l.Location = 'Mumbai';
 
--- 23-find buddy mentors and ideation mentor and which technology assign to perticular candidate if candidate id is 6
+-- 19-find buddy mentors and ideation mentor and which technology assign to perticular candidate if candidate id is 6
 SELECT 
     f.First_name, 
     c.Ideation_Engg_Id AS Ideation_Mentor_Id, 
